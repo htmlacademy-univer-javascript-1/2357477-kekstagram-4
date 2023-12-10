@@ -1,15 +1,14 @@
 /* eslint-disable no-console */
-import {messages, names, descriptions} from '/js/data.js';
-import {createComment, createPhoto} from '/js/util.js';
+import { createPhoto } from '/js/util.js';
+import '/js/forms.js';
+import { drawPictures } from '/js/draw.js';
 
-import {drawPictures} from '/js/draw.js';
 
-
-let photos = [];
+const photos = [];
 for (let iterrations = 0; iterrations < 25; iterrations++){
   photos[iterrations] = createPhoto(iterrations);
 }
 
 drawPictures(photos);
 
-console.log(photos);
+
